@@ -1,0 +1,98 @@
+body{
+    margin: 0px 0px 0px ;  
+}
+.navbar{ 
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #0b0b0b;
+    color: #f0f2f0;
+    height: 80px;
+    width:100%;
+}
+img{
+    width: 90px;
+    margin-left: 100px;
+}
+.line{
+    width: 1px;
+    height: 50px;
+    background-color: white;
+   margin-left: 210px;
+}
+.list{ 
+     display: flex;
+    gap: 40px;
+    margin-right:300px;
+    list-style: none;
+}
+.list:hover{
+    cursor: pointer; 
+}
+.list-item:hover::after{
+    opacity: 1;
+    left: 10px;
+    transform: rotate(135deg);
+    transition: transform .0s ease-in-out;
+}
+.list-item::after{
+    position: relative;
+    top: -2px;
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-right: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    margin-left: 2px;
+    opacity: 0;
+}
+.button-small{
+    height: 35px;
+    width: 130px;
+    background-color: #d11dc8;
+    color: #ffffff;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.button-small:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+.button-large{
+    height: 60px;
+    width: 220px;
+    background-color: #d11dc8;
+    color: #ffffff;
+    border-radius: 7px;
+    font-weight: bold;
+   margin-top: 80px;
+}
+.button-large:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+.hero-heading{
+    width: 900px;
+    font-size: 80px;
+    color: #ffffff;
+    text-align: center;
+     padding-top: 70px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 250px;
+    background-image:url('./assets/backgroundg.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover; 
+} 
+.hero-description{
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: -70px;
+}
